@@ -13,15 +13,15 @@ describe('Buscar iPhone 16 e adicionar ao carrinho', () => {
     // Buscar "iPhone 16"
     cy.get('#twotabsearchtextbox').type('iPhone 16{enter}');
 
-    // Aguardar e clicar no primeiro item da lista
+    // Aguardar e clicar no item escolhido
     cy.contains('[data-component-type="s-search-result"]', 'Apple iPhone 16 Pro Max')
       .first()
       .click();
 
-    // Adicionar ao carrinho
-    cy.get('#add-to-cart-button')
+    // Clica no botão "Adicionar ao carrinho"
+    cy.get('#add-to-cart-button').click();
 
-
+  
 
   });
 
